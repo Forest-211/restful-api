@@ -1,0 +1,22 @@
+// 删除数据
+DELETE http://localhost:9000/user/6
+
+// 插入数据
+POST http://localhost:9000/user
+Content-Type: application/json;
+
+{
+    "email":"767425412@lin.com",
+    "password":"123456"
+}
+
+// 获取单条数据
+GET http://localhost:9000/user/1
+
+// 获取全部数据
+GET http://localhost:9000/users
+
+// 也可以通过如下方式请求测试：
+// curl -X GET http://localhost:9000/user/1
+// curl -X GET http://localhost:9000/users
+// curl -X POST http://localhost:9000/user -i -H "Content-Type: application/json" -d '{"email":"767425412@Foreset.com","password":"123456"}' 
